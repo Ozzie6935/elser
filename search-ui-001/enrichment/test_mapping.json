@@ -1,0 +1,134 @@
+{
+  "mappings": {
+    "properties": {
+      "content": {
+        "properties": {
+          "body": {
+            "properties": {
+              "clean_content": {"type": "text"},
+              "raw_html": {"type": "text"}
+            }
+          }
+        }
+      },
+      "url": {
+        "properties": {
+          "raw": {"type": "text"}
+        }
+      },
+      "title": {
+        "properties": {
+          "raw": {"type": "text"}
+        }
+      },
+      "description": {
+        "properties": {
+          "raw": {"type": "text"}
+        }
+      },
+      "meta": {
+        "properties": {
+          "title": {"type": "text"},
+          "description": {"type": "text"}
+        }
+      },
+      "platform": {"type": "keyword"},
+      "region": {"type": "keyword"},
+      "category": {"type": "keyword"},
+      "programming_language": {
+        "type": "keyword",
+        "fields": {
+          "text": {"type": "text"}
+        }
+      },
+      "framework": {
+        "type": "keyword",
+        "fields": {
+          "text": {"type": "text"}
+        }
+      },
+      "tool": {
+        "type": "keyword",
+        "fields": {
+          "text": {"type": "text"}
+        }
+      },
+      "concept": {
+        "type": "keyword",
+        "fields": {
+          "text": {"type": "text"}
+        }
+      },
+      "content_type": {
+        "type": "keyword",
+        "fields": {
+          "text": {"type": "text"}
+        }
+      },
+      "domain": {
+        "type": "keyword",
+        "fields": {
+          "text": {"type": "text"}
+        }
+      },
+      "technical_terms": {
+        "type": "keyword",
+        "fields": {
+          "text": {"type": "text"}
+        }
+      },
+      "entities": {
+        "properties": {
+          "person": {
+            "type": "keyword",
+            "fields": {
+              "text": {"type": "text"}
+            }
+          },
+          "organization": {
+            "type": "keyword",
+            "fields": {
+              "text": {"type": "text"}
+            }
+          },
+          "location": {
+            "type": "keyword",
+            "fields": {
+              "text": {"type": "text"}
+            }
+          },
+          "gpe": {
+            "type": "keyword",
+            "fields": {
+              "text": {"type": "text"}
+            }
+          },
+          "product": {
+            "type": "keyword",
+            "fields": {
+              "text": {"type": "text"}
+            }
+          },
+          "event": {
+            "type": "keyword",
+            "fields": {
+              "text": {"type": "text"}
+            }
+          }
+        }
+      },
+      "content_length": {
+        "type": "keyword",
+        "fields": {
+          "text": {"type": "text"}
+        }
+      },
+      "language": {
+        "type": "keyword",
+        "fields": {
+          "text": {"type": "text"}
+        }
+      }
+    }
+  }
+} 
