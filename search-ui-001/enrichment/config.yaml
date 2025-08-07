@@ -1,0 +1,24 @@
+common:
+  api_key: xyz123
+  origins: http://localhost:3000
+
+elasticsearch:
+  host: http://ozdb:9200
+  username: 
+  password: 
+  verify: false
+  ca_cert: 
+  cert_bundle: 
+  indexes:
+     semantic-python-index: semantic-python-index_enriched
+     semantic-elastic-co-index: semantic-elastic-co-index_enriched
+     semantic-wikipedia-index: semantic-wikipedia-index_enriched
+
+content_paths:
+  # Paths to content fields in Elasticsearch documents
+  # These can be customized for different environments
+  clean_content: content.body.clean_content
+  raw_html: content.body.raw_html
+  title: title.raw
+  description: description.raw
+  url: url.raw
